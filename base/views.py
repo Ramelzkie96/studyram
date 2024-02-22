@@ -63,7 +63,7 @@ def registerPage(request):
 
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
-    
+    # dffdfd
     rooms = Room.objects.filter(
         Q(topic__name__icontains=q) |
         Q(name__icontains=q) |
